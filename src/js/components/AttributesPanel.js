@@ -8,6 +8,18 @@ export default class AttributesPanel extends Component {
     super();
     this.state = {
       attributes: [{
+        name: 'assignment.group',
+        label: 'Assignment Group',
+        value: 'team1',
+        text: 'Team 1',
+        type: 'combo'
+      }, {
+        name: 'cordinator',
+        label: 'Cordinator',
+        value: 'carol',
+        text: 'Carol',
+        type: 'combo'
+      }, {
         name: 'affected.item',
         label: 'Service',
         value: 'Application',
