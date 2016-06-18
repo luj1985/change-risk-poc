@@ -1,0 +1,46 @@
+{
+  "risk": 0.6823,
+  "attributes" : [{
+    "name": "assignment.group",
+    "label": "Assignment Group",
+    "value": "team1",
+    "text": "Team 1",
+    "type": "combo"
+  }, {
+    "name": "cordinator",
+    "label": "Cordinator",
+    "value": "carol",
+    "text": "Carol",
+    "type": "combo"
+  }, {
+    "name": "affected.item",
+    "label": "Service",
+    "value": "Application",
+    "text": "Application",
+    "type": "combo"
+  }, {
+    "name": "impact",
+    "label": "Impact",
+    "value": "1",
+    "text": "1 - Enterprise",
+    "type": "combo"
+  }, {
+    "name": "model",
+    "label": "Change Model",
+    "value": "regular",
+    "text": "Regular",
+    "type": "combo"
+  }, {
+    "name": "risk",
+    "label": "Risk",
+    "value": 0.58,
+    "type": "risk"
+  }],
+  "features" : [{
+    "id" : "C10001",
+    "title" : "Restart email server"
+  }, {
+    "id" : "C10002",
+    "title" : "Server upgrade."
+  }]
+}
