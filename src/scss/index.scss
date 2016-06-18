@@ -10,8 +10,14 @@ $yellow: rgba(255,255,0,.5);
 $red: rgba(255,0,0,.5);
 
 input[type="range"].risk {
-
   &::-webkit-slider-runnable-track {
+    background: -webkit-linear-gradient(left, $green, $yellow 50%, $red);
+    background: -moz-linear-gradient(left, $green, $yellow 50%, $red);
+    background: linear-gradient(left, $green, $yellow 50%, $red);
+    height: 16px;
+  }
+
+  &::-moz-range-track {
     background: -webkit-linear-gradient(left, $green, $yellow 50%, $red);
     background: -moz-linear-gradient(left, $green, $yellow 50%, $red);
     background: linear-gradient(left, $green, $yellow 50%, $red);
@@ -22,7 +28,23 @@ input[type="range"].risk {
     background-color: gray;
     border-radius: 0;
     border: 0px;
-    width: 8px;
+    width: 6px;
     margin-top: -5px;
   }
+
+  &::-moz-range-thumb {
+    background-color: gray;
+    border-radius: 0;
+    border: 0px;
+    width: 6px;
+    margin-top: -5px;
+  }
+}
+
+
+.change-id {
+}
+
+.change-title {
+  margin: 0 6px;
 }

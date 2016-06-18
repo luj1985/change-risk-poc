@@ -3,6 +3,7 @@ import path from 'path';
 export default {
   copyAssets: [
     'src/index.html',
+    'mock/**',
     {
       asset: 'src/img/**',
       dist: 'dist/img/'
