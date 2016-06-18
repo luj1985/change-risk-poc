@@ -7,10 +7,9 @@ export default class RiskReasonPanel extends Component {
   render () {
     return (
       <List>
-        <ListItem>This is list item 1</ListItem>
-        <ListItem>This is list item 2</ListItem>
-        <ListItem>This is list item 3</ListItem>
-        <ListItem>This is list item 4</ListItem>
+        <ListItem>C10001</ListItem>
+        <ListItem>C10002</ListItem>
+        <ListItem>C10003</ListItem>
       </List>
     );
   }

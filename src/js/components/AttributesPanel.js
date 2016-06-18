@@ -25,27 +25,41 @@ export default class AttributesPanel extends Component {
         value: 'regular',
         text: 'Regular',
         type: 'combo'
+      }, {
+        name: 'risk',
+        label: 'Risk',
+        value: 0.58,
+        type: 'risk'
       }]
     };
   }
 
   render () {
     let attrs = this.state.attributes.map((attr, index) => {
-      var field;
-      if (attr.type === 'combo') {
-        field = (
-          <select id={attr.name} defaultValue={attr.value}>
-            <option value={attr.value}>{attr.text}</option>
-          </select>
-        )
-      } else {
-        field = (<input type="text" id={attr.name} defaultValue={attr.text}/>)
+      switch(attr.type) {
+        case 'combo':
+          return (
+            <FormField key={index} label={attr.label} htmlFor={attr.name}>
+              <select id={attr.name} defaultValue={attr.value}>
+                <option value={attr.value}>{attr.text}</option>
+              </select>
+            </FormField>
+          );
+        case 'risk':
+          return (
+            <FormField key={index} label={`${attr.label} (${attr.value})`} htmlFor={attr.name}>
+              <input id={attr.name} type="range" className="risk"
+                     readOnly={true}
+                     defaultValue={attr.value * 100} min="0" max="100" htmlReadOnly={true}/>
+            </FormField>
+          );
+        default:
+          return (
+            <FormField key={index} label={attr.label} htmlFor={attr.name}>
+              <input type="text" id={attr.name} defaultValue={attr.text} />
+            </FormField>
+          );
       }
-      return (
-        <FormField key={index} label={attr.label} htmlFor={attr.name}>
-          {field}
-        </FormField>
-      );
     });
 
     return (
