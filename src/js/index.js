@@ -3,19 +3,19 @@ import '../scss/index.scss';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import App from 'grommet/components/App';
-import Header from 'grommet/components/Header';
 import Title from 'grommet/components/Title';
-import Section from 'grommet/components/Section';
+import Header from 'grommet/components/Header';
 import Footer from 'grommet/components/Footer';
+import Section from 'grommet/components/Section';
 import Box from 'grommet/components/Box';
-import Rest from 'grommet/utils/Rest';
-import Form from 'grommet/components/Form';
 import Button from 'grommet/components/Button';
+import Form from 'grommet/components/Form';
 import Launch from 'grommet/components/icons/base/Launch';
 import FormField from 'grommet/components/FormField';
 import FormFields from 'grommet/components/FormFields';
 import List from 'grommet/components/List';
 import ListItem from 'grommet/components/ListItem';
+import Rest from 'grommet/utils/Rest';
 
 class Main extends Component {
 
