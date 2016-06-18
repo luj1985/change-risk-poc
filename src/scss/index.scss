@@ -10,14 +10,8 @@ $yellow: rgba(255,255,0,.5);
 $red: rgba(255,0,0,.5);
 
 input[type="range"].risk {
+  // Chrome
   &::-webkit-slider-runnable-track {
-    background: -webkit-linear-gradient(left, $green, $yellow 50%, $red);
-    background: -moz-linear-gradient(left, $green, $yellow 50%, $red);
-    background: linear-gradient(left, $green, $yellow 50%, $red);
-    height: 16px;
-  }
-
-  &::-moz-range-track {
     background: -webkit-linear-gradient(left, $green, $yellow 50%, $red);
     background: -moz-linear-gradient(left, $green, $yellow 50%, $red);
     background: linear-gradient(left, $green, $yellow 50%, $red);
@@ -30,6 +24,14 @@ input[type="range"].risk {
     border: 0px;
     width: 6px;
     margin-top: -5px;
+  }
+
+  // Firefox
+  &::-moz-range-track {
+    background: -webkit-linear-gradient(left, $green, $yellow 50%, $red);
+    background: -moz-linear-gradient(left, $green, $yellow 50%, $red);
+    background: linear-gradient(left, $green, $yellow 50%, $red);
+    height: 16px;
   }
 
   &::-moz-range-thumb {

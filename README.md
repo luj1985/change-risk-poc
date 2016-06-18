@@ -10,5 +10,5 @@ $ gulp dev
 ```
 
 ### Note:
-When click "Submit", it sends HTTP GET request to "/suggest.json".
-You can change it to corresponding server side endpoint.
+When click __Submit__, it sends HTTP GET request to __/suggest.json__.
+You need to change it to corresponding server side endpoint.

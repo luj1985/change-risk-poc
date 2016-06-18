@@ -1,5 +1,4 @@
 {
-  "risk": 0.6823,
   "attributes" : [{
     "name": "assignment.group",
     "label": "Assignment Group",
@@ -36,6 +35,7 @@
     "value": 0.58,
     "type": "risk"
   }],
+  
   "features" : [{
     "id" : "C10001",
     "title" : "Restart email server"
